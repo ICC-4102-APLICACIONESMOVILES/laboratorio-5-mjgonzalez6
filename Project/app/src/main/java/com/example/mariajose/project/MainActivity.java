@@ -22,11 +22,15 @@ import com.google.gson.GsonBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 
 public class MainActivity extends AppCompatActivity {
 
     public static final String MY_REFERENCES = "my_references";
+    private NetworkManager networkManager;
 
     private EditText userMail;
     private EditText userPassword;

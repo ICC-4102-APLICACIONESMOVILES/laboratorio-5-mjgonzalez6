@@ -11,6 +11,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.content.SharedPreferences;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.util.HashMap;
+import java.util.Map;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText userPassword;
     private TextView Info;
     private Button buttonLogin;
+
+    public static final String LOGIN_URL = "http://localhost/androidLogin/";
 
 
     SharedPreferences sharedPreferences;
@@ -69,5 +82,10 @@ public class MainActivity extends AppCompatActivity {
         failLogin.show();
 
         }
+
+    private void userLogin(){
+
+    }
+
     }
 

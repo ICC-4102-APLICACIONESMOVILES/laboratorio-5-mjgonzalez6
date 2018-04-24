@@ -21,8 +21,7 @@ import android.view.MenuItem;
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, FormFragment.OnFragmentInteractionListener, FormSummaryFragment.OnFragmentInteractionListener, FormViewFragment.OnFragmentInteractionListener {
 
-    AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-            AppDatabase.class, "database-name").build();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

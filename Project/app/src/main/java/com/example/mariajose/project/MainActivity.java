@@ -29,6 +29,8 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     public static final String MY_REFERENCES = "my_references";
     private NetworkManager networkManager;
 

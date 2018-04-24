@@ -23,7 +23,7 @@ public interface AnswerDao {
     @Delete
     void delete(Answer answer);
 
-    @Query("SELECT * FROM repo WHERE qid=:qid")
+    @Query("SELECT * FROM question WHERE qid=:qid")
     List<Answer> findAnswersForQuestions(final int qid);
 
 }

@@ -14,13 +14,21 @@ import static android.arch.persistence.room.ForeignKey.CASCADE;
  * Created by MariaJose on 10-04-2018.
  */
 
-@Entity(foreignKeys = @ForeignKey(entity = Question.class, parentColumns = "uid", childColumns = "aid", onDelete = CASCADE))
+@Entity(foreignKeys = @ForeignKey(entity = Question.class, parentColumns = "qid", childColumns = "aid", onDelete = CASCADE))
 public abstract class Answer {
     @PrimaryKey
     private int aid;
 
     @ColumnInfo(name = "text")
     private String answerText;
+
+
+
+    public Answer(int id, String text, final int questionId) {
+        this.aid = id;
+        this.answerText = text;
+    }
+
 
     public Answer() {
     }

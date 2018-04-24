@@ -41,8 +41,5 @@ public abstract class Answer {
         this.answerText = answerText;
     }
 
-    @Query("SELECT * FROM repo WHERE qid=:qid")
-    List<Answer> findAnswersForQuestions(final int qid) {
-        return null;
-    }
+
 }

@@ -18,8 +18,12 @@ public interface AnswerDao {
     List<Answer> getAll();
 
     @Insert
-    void insertAll(Answer  answers);
+    void insertAll(Answer answers);
 
     @Delete
     void delete(Answer answer);
+
+    @Query("SELECT * FROM repo WHERE qid=:qid")
+    List<Answer> findAnswersForQuestions(final int qid);
+
 }
